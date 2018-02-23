@@ -1,0 +1,21 @@
+{
+  "extends": "airbnb",
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "rules": {
+    "react/prefer-stateless-function": 0,
+    "import/prefer-default-export": 0,
+    "react/jsx-uses-react": "error",
+    "react/jsx-uses-vars": "error",
+    "no-param-reassign": 0,
+    "react/prop-types": 0
+  },
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "plugins": ["react"]
+}
