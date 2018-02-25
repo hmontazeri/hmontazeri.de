@@ -1,2 +1,63 @@
 @import 'styles/_reset.scss';
-@import 'styles/flexboxgrid.scss';
+@import 'styles/_variables.scss';
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import 'styles/typebase.css';
+
+html,
+body {
+  background: $hm-black;
+  font-family: 'Roboto', sans-serif;
+
+  .container {
+    display: flex;
+    height: 100vh;
+    flex-direction: row;
+    .picture {
+      flex: 4;
+    }
+    .about {
+      flex: 6;
+    }
+  }
+
+  .picture {
+    background: url('/images/hamed.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 4rem;
+  }
+
+  .about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: $hm-grey-text;
+    padding: 4rem;
+    h1 {
+      text-align: center;
+      font-size: 3rem;
+      font-weight: 600;
+    }
+    p {
+      a,
+      b {
+        color: $hm-purple;
+        text-decoration: none;
+      }
+    }
+  }
+
+  .rotate {
+    /* Safari */
+    -webkit-transform: rotate(-90deg);
+    /* Firefox */
+    -moz-transform: rotate(-90deg);
+    /* IE */
+    -ms-transform: rotate(-90deg);
+    /* Opera */
+    -o-transform: rotate(-90deg);
+    /* Internet Explorer */
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+  }
+}
