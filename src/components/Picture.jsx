@@ -1,9 +1,5 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-class Picture extends Component {
-  render() {
-    return <div className="picture" />;
-  }
-}
+const Picture = () => <div className="picture" />;
 
 export default Picture;
