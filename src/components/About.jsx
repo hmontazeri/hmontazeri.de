@@ -17,10 +17,20 @@ class About extends Component {
         </p>
         <p>
           Ever since I did a lot of projects with <b>Java (Spring)</b>, <b>Rails</b> and{' '}
-          <b>AngularJS</b>. Now focused on <b>Serverless (λ)</b> API's with{' '}
+          <b>AngularJS</b>. Now focused on <b>Serverless (λ)</b> APIs with{' '}
           <b>React / React Native</b>.
         </p>
-        <p />
+        <p className="links">
+          <a href="https://github.com/hmontazeri">
+            <span className="typcn typcn-social-github-circular" />
+          </a>
+          <a href="https://linkedin.com/in/hmontazeriger">
+            <span className="typcn typcn-social-linkedin-circular" />
+          </a>
+          <a href="https://twitter.com/h_montazeri">
+            <span className="typcn typcn-social-twitter-circular" />
+          </a>
+        </p>
       </div>
     );
   }

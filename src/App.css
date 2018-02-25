@@ -168,15 +168,7 @@ body {
     body .about p b {
       color: #a239ca;
       text-decoration: none; }
-  html .rotate,
-  body .rotate {
-    /* Safari */
-    -webkit-transform: rotate(-90deg);
-    /* Firefox */
-    -moz-transform: rotate(-90deg);
-    /* IE */
-    -ms-transform: rotate(-90deg);
-    /* Opera */
-    -o-transform: rotate(-90deg);
-    /* Internet Explorer */
-    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3); }
+    html .about p.links,
+    body .about p.links {
+      margin-top: 3rem;
+      font-size: 3rem; }
