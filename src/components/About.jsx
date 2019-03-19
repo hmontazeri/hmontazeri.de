@@ -74,8 +74,8 @@ class About extends Component {
               <h4>Education</h4>
               <div className="33-3">
                 <p className="pull-left">
-                  2015 - Bachelor of Science <br /> Hochschule Heilbronn,
-                  Germany
+                  2015 - Software Engineering - Bachelor of Science <br />{' '}
+                  Hochschule Heilbronn, Germany
                 </p>
               </div>
               <div className="clearfix" />

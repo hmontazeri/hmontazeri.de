@@ -231,7 +231,7 @@ body {
   font-family: 'Roboto', sans-serif; }
   html .container,
   body .container {
-    padding: 4rem;
+    padding: 3rem;
     display: flex;
     flex-direction: row; }
     html .container h1,
@@ -244,14 +244,24 @@ body {
       flex: 3; }
     html .container .about,
     body .container .about {
-      flex: 9; }
-  html .picture-wrapper,
-  body .picture-wrapper {
+      flex: 8; }
+  html .picture .picture-wrapper,
+  body .picture .picture-wrapper {
     width: 12rem; }
-    html .picture-wrapper img,
-    body .picture-wrapper img {
+    html .picture .picture-wrapper img,
+    body .picture .picture-wrapper img {
       border-radius: 50%;
       width: 100%; }
+  html .picture .contact,
+  body .picture .contact {
+    margin-top: 2rem;
+    padding-left: 2rem; }
+    html .picture .contact a,
+    body .picture .contact a {
+      text-decoration: none;
+      color: #0e0b16;
+      font-weight: 600;
+      font-size: 3rem; }
   html .about,
   body .about {
     color: #0e0b16; }
@@ -356,6 +366,10 @@ body {
     html .container .picture .picture-wrapper,
     body .container .picture .picture-wrapper {
       margin: 0 auto; }
+    html .container .picture .contact,
+    body .container .picture .contact {
+      text-align: center;
+      padding-left: 0; }
     html .container .about li.item,
     body .container .about li.item {
       margin: 0;

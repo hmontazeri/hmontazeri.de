@@ -14,7 +14,7 @@ body {
   font-family: 'Roboto', sans-serif;
 
   .container {
-    padding: 4rem;
+    padding: 3rem;
     display: flex;
     flex-direction: row;
     h1,
@@ -25,15 +25,27 @@ body {
       flex: 3;
     }
     .about {
-      flex: 9;
+      flex: 8;
     }
   }
 
-  .picture-wrapper {
-    width: 12rem;
-    img {
-      border-radius: 50%;
-      width: 100%;
+  .picture {
+    .picture-wrapper {
+      width: 12rem;
+      img {
+        border-radius: 50%;
+        width: 100%;
+      }
+    }
+    .contact {
+      margin-top: 2rem;
+      padding-left: 2rem;
+      a {
+        text-decoration: none;
+        color: $hm-black;
+        font-weight: 600;
+        font-size: 3rem;
+      }
     }
   }
 
@@ -148,6 +160,10 @@ body {
       .picture {
         .picture-wrapper {
           margin: 0 auto;
+        }
+        .contact {
+          text-align: center;
+          padding-left: 0;
         }
       }
       .about {
