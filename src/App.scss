@@ -1,7 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
 @import 'styles/_reset.scss';
 @import 'styles/_variables.scss';
 @import 'styles/_typebase.scss';
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
 /* Desktop  ----------- */
 html,
@@ -9,52 +9,132 @@ body {
   width: 100%;
   height: 100%;
   margin: 0;
-  background: $hm-black;
+  padding: 0;
+  background: $hm-white;
   font-family: 'Roboto', sans-serif;
 
   .container {
+    padding: 4rem;
     display: flex;
-    height: 100vh;
     flex-direction: row;
+    h1,
+    ul {
+      margin-top: 0;
+    }
     .picture {
-      flex: 4;
+      flex: 3;
     }
     .about {
-      flex: 6;
+      flex: 9;
     }
   }
 
-  .picture {
-    background: url('/images/hamed.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    padding: 4rem;
+  .picture-wrapper {
+    width: 12rem;
+    img {
+      border-radius: 50%;
+      width: 100%;
+    }
   }
 
   .about {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    color: $hm-grey-text;
-    padding: 4rem;
+    color: $hm-black;
+
+    ul li {
+      clear: both;
+    }
+
+    li.item {
+      margin-bottom: 1rem;
+      display: block;
+      // border-bottom: 5px solid $hm-black;
+    }
+
+    .prefix {
+      margin-right: 2rem;
+      width: 3rem;
+      h1,
+      h2,
+      h3,
+      h4 {
+        text-align: center;
+        margin-top: 1rem;
+      }
+      // border-bottom: 0.5rem solid $hm-black;
+      h1 {
+        border-bottom: 0.5rem solid $hm-black;
+        padding-bottom: 0rem;
+      }
+      h2 {
+        font-weight: 500;
+        padding-bottom: 0.1rem;
+        border-bottom: 0.4rem solid $hm-black;
+        font-size: 2.5rem;
+      }
+      h3 {
+        font-weight: 500;
+        padding-bottom: 0.7rem;
+        border-bottom: 0.3rem solid $hm-black;
+        font-size: 2rem;
+      }
+      h4 {
+        font-weight: 500;
+        padding-bottom: 0.5rem;
+        border-bottom: 0.2rem solid $hm-black;
+        font-size: 1.8rem;
+      }
+    }
+
+    .content {
+      h1,
+      h2,
+      h3,
+      h4 {
+        text-align: left;
+        margin-top: 1rem;
+        margin-bottom: 1.5rem;
+      }
+    }
+
     h1 {
-      text-align: center;
+      text-align: left;
       font-size: 3rem;
       font-weight: 600;
     }
+    h2 {
+      text-align: left;
+      font-size: 2.5rem;
+      font-weight: 500;
+    }
+    h3 {
+      text-align: left;
+      font-size: 2rem;
+      font-weight: 500;
+    }
+    h4 {
+      text-align: left;
+      font-size: 1.8rem;
+      font-weight: 500;
+    }
     p {
+      margin-top: 0;
       a,
       b {
-        color: $hm-purple;
-        text-decoration: none;
+        font-weight: bold;
       }
     }
-    p.links {
-      margin-top: 3rem;
-      font-size: 3rem;
-    }
   }
+}
+
+.pull-left {
+  float: left;
+}
+.pull-right {
+  float: right;
+}
+
+.clearfix {
+  clear: both;
 }
 
 /* Smartphones (portrait and landscape) ----------- */
@@ -62,30 +142,18 @@ body {
   html,
   body {
     .container {
-      display: flex;
-      height: auto;
-      width: 100%;
-      overflow: hidden;
       flex-direction: column;
+      padding: 1rem;
+
       .picture {
-        height: 17rem;
-        padding: 0;
-        margin: 0;
+        .picture-wrapper {
+          margin: 0 auto;
+        }
       }
       .about {
-        padding: 0rem;
-        margin: 0rem;
-        font-size: 1rem;
-        h1 {
-          font-size: 2rem;
-          padding: 0.4rem;
-          margin: 0.2rem 0rem;
-          line-height: 2.5rem;
-        }
-        p {
-          text-align: center;
-          padding: 0.5rem;
-          line-height: 1.2rem;
+        li.item {
+          margin: 0;
+          padding: 0;
         }
       }
     }

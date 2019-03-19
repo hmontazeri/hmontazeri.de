@@ -1,8 +1,8 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
-@import url("https://fonts.googleapis.com/css?family=Open+Sans");
 html,
 body,
 div,
@@ -226,76 +226,137 @@ body {
   width: 100%;
   height: 100%;
   margin: 0;
-  background: #0e0b16;
+  padding: 0;
+  background: #ffffff;
   font-family: 'Roboto', sans-serif; }
   html .container,
   body .container {
+    padding: 4rem;
     display: flex;
-    height: 100vh;
     flex-direction: row; }
+    html .container h1,
+    html .container ul,
+    body .container h1,
+    body .container ul {
+      margin-top: 0; }
     html .container .picture,
     body .container .picture {
-      flex: 4; }
+      flex: 3; }
     html .container .about,
     body .container .about {
-      flex: 6; }
-  html .picture,
-  body .picture {
-    background: url("/images/hamed.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    padding: 4rem; }
+      flex: 9; }
+  html .picture-wrapper,
+  body .picture-wrapper {
+    width: 12rem; }
+    html .picture-wrapper img,
+    body .picture-wrapper img {
+      border-radius: 50%;
+      width: 100%; }
   html .about,
   body .about {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    color: #d5d5d5;
-    padding: 4rem; }
+    color: #0e0b16; }
+    html .about ul li,
+    body .about ul li {
+      clear: both; }
+    html .about li.item,
+    body .about li.item {
+      margin-bottom: 1rem;
+      display: block; }
+    html .about .prefix,
+    body .about .prefix {
+      margin-right: 2rem;
+      width: 3rem; }
+      html .about .prefix h1,
+      html .about .prefix h2,
+      html .about .prefix h3,
+      html .about .prefix h4,
+      body .about .prefix h1,
+      body .about .prefix h2,
+      body .about .prefix h3,
+      body .about .prefix h4 {
+        text-align: center;
+        margin-top: 1rem; }
+      html .about .prefix h1,
+      body .about .prefix h1 {
+        border-bottom: 0.5rem solid #0e0b16;
+        padding-bottom: 0rem; }
+      html .about .prefix h2,
+      body .about .prefix h2 {
+        font-weight: 500;
+        padding-bottom: 0.1rem;
+        border-bottom: 0.4rem solid #0e0b16;
+        font-size: 2.5rem; }
+      html .about .prefix h3,
+      body .about .prefix h3 {
+        font-weight: 500;
+        padding-bottom: 0.7rem;
+        border-bottom: 0.3rem solid #0e0b16;
+        font-size: 2rem; }
+      html .about .prefix h4,
+      body .about .prefix h4 {
+        font-weight: 500;
+        padding-bottom: 0.5rem;
+        border-bottom: 0.2rem solid #0e0b16;
+        font-size: 1.8rem; }
+    html .about .content h1,
+    html .about .content h2,
+    html .about .content h3,
+    html .about .content h4,
+    body .about .content h1,
+    body .about .content h2,
+    body .about .content h3,
+    body .about .content h4 {
+      text-align: left;
+      margin-top: 1rem;
+      margin-bottom: 1.5rem; }
     html .about h1,
     body .about h1 {
-      text-align: center;
+      text-align: left;
       font-size: 3rem;
       font-weight: 600; }
-    html .about p a,
-    html .about p b,
-    body .about p a,
-    body .about p b {
-      color: #a239ca;
-      text-decoration: none; }
-    html .about p.links,
-    body .about p.links {
-      margin-top: 3rem;
-      font-size: 3rem; }
+    html .about h2,
+    body .about h2 {
+      text-align: left;
+      font-size: 2.5rem;
+      font-weight: 500; }
+    html .about h3,
+    body .about h3 {
+      text-align: left;
+      font-size: 2rem;
+      font-weight: 500; }
+    html .about h4,
+    body .about h4 {
+      text-align: left;
+      font-size: 1.8rem;
+      font-weight: 500; }
+    html .about p,
+    body .about p {
+      margin-top: 0; }
+      html .about p a,
+      html .about p b,
+      body .about p a,
+      body .about p b {
+        font-weight: bold; }
+
+.pull-left {
+  float: left; }
+
+.pull-right {
+  float: right; }
+
+.clearfix {
+  clear: both; }
 
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   html .container,
   body .container {
-    display: flex;
-    height: auto;
-    width: 100%;
-    overflow: hidden;
-    flex-direction: column; }
-    html .container .picture,
-    body .container .picture {
-      height: 17rem;
-      padding: 0;
-      margin: 0; }
-    html .container .about,
-    body .container .about {
-      padding: 0rem;
-      margin: 0rem;
-      font-size: 1rem; }
-      html .container .about h1,
-      body .container .about h1 {
-        font-size: 2rem;
-        padding: 0.4rem;
-        margin: 0.2rem 0rem;
-        line-height: 2.5rem; }
-      html .container .about p,
-      body .container .about p {
-        text-align: center;
-        padding: 0.5rem;
-        line-height: 1.2rem; } }
+    flex-direction: column;
+    padding: 1rem; }
+    html .container .picture .picture-wrapper,
+    body .container .picture .picture-wrapper {
+      margin: 0 auto; }
+    html .container .about li.item,
+    body .container .about li.item {
+      margin: 0;
+      padding: 0; } }
